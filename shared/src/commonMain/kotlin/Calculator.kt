@@ -1,17 +1,22 @@
+package org.example.project
+
 class Calculator {
-    fun Add(left: Int, right: Int): Int {
+    fun add(left: Double, right: Double): Double {
         return left + right
     }
 
-    fun Subtract(left: Int, right: Int): Int {
+    fun subtract(left: Double, right: Double): Double {
         return left - right
     }
 
-    fun Multiply(left: Int, right: Int): Int {
+    fun multiply(left: Double, right: Double): Double {
         return left * right
     }
 
-    fun Divide(left: Int, right: Int): Int {
+    fun divide(left: Double, right: Double): Double {
+        if (right == 0.0) {
+            throw IllegalArgumentException("Cannot divide by zero")
+        }
         return left / right
     }
 }
