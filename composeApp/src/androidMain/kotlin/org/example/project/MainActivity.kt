@@ -94,7 +94,8 @@ fun CalcNumericButton(number: Int, display: MutableState<String>) {
 @Composable
 fun CalcOperationButton(operation: String, display: MutableState<String>) {
     Button(
-        onClick = { /* TODO: Implement operation logic */ },
+        /* logic will be added here when button is pressed*/
+        onClick = {  },
         modifier = Modifier.padding(4.dp)
     ) {
         Text(text = operation)
