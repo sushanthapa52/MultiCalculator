@@ -1,17 +1,45 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+Project Title: Multicalculator
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+Project Overview
+Multicalculator is designed to achieve the following objectives:
+-To calculate the simple mathematical operations like sum, difference, multiplication and division.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+Git uses in the project:
 
-* `/shared` is for the code that will be shared between all targets in the project.
-  The most important subfolder is `commonMain`. If preferred, you can add code to the platform-specific folders here too.
+1. Initializing the Repository
+To start a new Git repository, I used following command:
+git init
+This command initializes a new Git repository in my project's directory.
+
+2. Checking Repository Status
+To check the current status of my repository, I used 
+git status
+This command displays the state of the working directory and the staging area, showing which changes have been staged, which haven't, and which files aren't being tracked by Git.
+
+3. Adding Changes to Staging
+To add changes to the staging area, I used
+git add <filename> or simply git add . (to add all the files)
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+4. Committing Changes
+git commit -m "commit message"
+This command records changes to the repository with a descriptive message about what changes were made.
+
+5. Pushing Changes to Remote Repository
+git push -u origin main
+This command sends your committed changes to the remote repository, ensuring that your local commits are reflected remotely.
+
+Branching and Merging
+Creating a New Branch
+To create a new branch, I used:
+git branch <branch-name>
+This command creates a new branch called <branch-name>.
+
+Switching Branches
+To switch to a different branch, I used:
+git checkout <branch-name>
+This command switches your working directory to the specified branch.
+
+
+Conclusion
+Using Git's branching allows for effective collaboration and version control. By following this workflow, we can ensure a smooth development process, with clear tracking of changes and easy management of multiple features or fixes simultaneously.
